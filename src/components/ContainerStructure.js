@@ -4,7 +4,7 @@ import { GeneralContainerText, GeneralContainerSubTitle } from '../styles/styles
 
 const ContainerStructure = (props) => {
   return (
-    <GeneralContainer leftSize="20px" color="#81be57" cut="polygon(0 0, 0 75%, 100% 100%, 100% 0, 100% 0)">
+    <GeneralContainer leftSize="20px" color="#81be57" cut="polygon(0 0, 0 70%, 100% 100%, 100% 0, 100% 0)">
       <GeneralContainerTitle>
         Estructurales
       </GeneralContainerTitle>
@@ -12,7 +12,7 @@ const ContainerStructure = (props) => {
         Describen cómo los objetos y clases se pueden combinar
         para formar estructuras más grandes y complejas
       </GeneralContainerText>
-      <GeneralContainerSubTitle textAlign="right">
+      <GeneralContainerSubTitle textAlign="right" topText="65px">
         <h4>Composite</h4>
         <h4>Decorator</h4>
         <h4>Flyweight</h4>

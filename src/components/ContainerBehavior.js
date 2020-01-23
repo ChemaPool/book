@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import Logo from '../images/logo.png';
 import Styled from 'styled-components';
 import { GeneralContainerTitle } from '../styles/styles';
 import { GeneralContainerText, GeneralContainerSubTitle } from '../styles/styles';
 
 const Container = Styled.div`
-  top: 525px;
-  width: 800px;
+  top: 490px;
+  width: 700px;
   margin: auto;
-  height: 550px;
+  height: 485px;
   font-size: 14px;
   position: absolute;
   background-color: #e3a252;
-  clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 43%, 50% 0, 100% 43%, 100% 100%, 0% 100%);
 `;
 
 const ContainerFlex = Styled.div`
-  padding: 0px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 ${props => props.sideText};
+  margin-top: ${props => props.marginTop};
 `;
 
 const Image = Styled.img`
@@ -29,12 +30,12 @@ const Image = Styled.img`
 const ContainerBehavior = (props) => {
   return (
     <Container>
-      <GeneralContainerText topText="200px">
+      <GeneralContainerText topText="200px" sideText="30px">
         colaboración, relaciones y delegación de responsabilidades
         entre otras clases logrando con esto simplificar la forma en
         que los objetos se comunican e interactúan entre si
       </GeneralContainerText>
-      <ContainerFlex>
+      <ContainerFlex marginTop="-40px" sideText="30px">
         <GeneralContainerSubTitle>
           <h4>Iterator</h4>
           <h4>Mediator</h4>
@@ -52,10 +53,10 @@ const ContainerBehavior = (props) => {
         </GeneralContainerSubTitle>
       </ContainerFlex>
       <ContainerFlex>
-        <GeneralContainerTitle width="180px">
+        <GeneralContainerTitle width="180px" marginLeft="20px">
           Comportamiento
         </GeneralContainerTitle>
-        <Image src={logo} alt="Logo"/>
+        <Image src={Logo} alt="Logo"/>
       </ContainerFlex>
     </Container>
   );

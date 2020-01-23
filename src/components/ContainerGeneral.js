@@ -8,27 +8,28 @@ import ContainerStructure from './ContainerStructure';
 
 const Container = Styled.div`
   margin: auto;
-  width: 800px;
+  width: 700px;
   display: flex;
-  height: 1070px;
+  height: 970px;
   font-size: 14px;
   text-align: center;
   justify-content: center;
   border: 5px solid black;
+  font-family: Arial, Helvetica, sans-serif;
 `;
 
 const ContainerImage = Styled.div`
-  top: 350px;
+  top: 325px;
   z-index: 1;
-  width: 300px;
-  height: 300px;
+  width: 340px;
+  height: 340px;
   position: absolute;
   border-radius: 50%;
   background-color: rgba(0,0,0, .5);
 `;
 
 const Image = Styled.img`
-  top: -50px;
+  top: -25px;
   width: 250px;
   position: relative;
 `;

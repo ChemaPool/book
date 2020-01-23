@@ -4,11 +4,11 @@ import { GeneralContainerText, GeneralContainerSubTitle } from '../styles/styles
 
 const ContainerCreate = (props) => {
   return (
-    <GeneralContainer leftSize="-20px" color="#c64a3e" cut="polygon(0 0, 0 100%, 0 100%, 100% 75%, 100% 0)" >
+    <GeneralContainer leftSize="-20px" color="#c64a3e" cut="polygon(0 0, 0 100%, 0 100%, 100% 70%, 100% 0)" >
       <GeneralContainerTitle>
         Creacionales
       </GeneralContainerTitle>
-      <GeneralContainerText>
+      <GeneralContainerText topText="0">
         Restringen o controlan la forma en que creamos los objetos,
         evitando que el usuario utilice la instrucción new para crear nuevas instancias
       </GeneralContainerText>
